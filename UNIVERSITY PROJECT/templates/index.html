@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>University Database Entry</title>
+    <style>
+        body { font-family: sans-serif; margin: 50px; line-height: 1.6; }
+        form { max-width: 400px; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        input { width: 100%; margin-bottom: 10px; padding: 8px; }
+        button { background-color: #28a745; color: white; border: none; padding: 10px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <h2>Add New Student</h2>
+    <form action="/submit" method="POST">
+        <label>Student ID:</label>
+        <input type="text" name="student_id" required>
+        
+        <label>Name:</label>
+        <input type="text" name="student_name" required>
+        
+        <label>Department Name:</label>
+        <input type="text" name="dept_name" required>
+        
+        <label>Total Credits:</label>
+        <input type="number" name="tot_cred" required>
+        
+        <button type="submit">Insert Data</button>
+    </form>
+</body>
+</html>
